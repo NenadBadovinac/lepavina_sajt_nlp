@@ -1,0 +1,8 @@
+16.07.2021.
+
+Primer koji si mi predlozio sastoji 
+se od tacaka gde sve imaju isti broj dimenzija.
+Zbog toga je exel fajl (ili csv) dobar za to. Npr.
+merimo odredjeni broj karakteristika (visinu, tezinu
+, pritisak) svakome. Ali, kod nas nema istog broja dimenzija.
+Mi imamo tekst i temu. Tekst moze biti proizvoljno dug. 
