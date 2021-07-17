@@ -71,7 +71,7 @@ algoritmi = [
 import numpy as np
 import pickle
 
-for algoritam in algoritmi[0:1]:
+for algoritam in algoritmi:
     klasifikator = algoritam
     klasifikator.fit(train_vektori, train_tema)
 
@@ -87,8 +87,9 @@ for algoritam in algoritmi[0:1]:
     uspeh = uspesnost(test_tema, predvidjeno)
     print ("\nUspesnost:", round(uspeh*100,2), "%")
     
-    # Objasnjenje za implementirano odredjivanje uspesnosti
-    # Mozemo i ovo dole, ali mislim da je ovo gore citkije
+    # Objasnjenje za implementirano odredjivanje uspesnosti je dole
+    # Mozemo i to, ali mislim da je ovo gore citkije
+    
 '''        
     from sklearn.metrics import accuracy_score
     predictions = klasifikator.predict(test_vektori)
