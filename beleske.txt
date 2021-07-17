@@ -6,3 +6,16 @@ Zbog toga je exel fajl (ili csv) dobar za to. Npr.
 merimo odredjeni broj karakteristika (visinu, tezinu
 , pritisak) svakome. Ali, kod nas nema istog broja dimenzija.
 Mi imamo tekst i temu. Tekst moze biti proizvoljno dug. 
+
+17.07.2021.
+
+-citat-
+"Linear Support Vector Machine is widely regarded as one of the best 
+text classification algorithms. We achieve a higher accuracy score of 
+79% which is 5% improvement over Naive Bayes."
+
+Ovo je u skladu sa onim sto sam ja dobio. Nema potrebe da mnogo lutamo
+sa algoritmima. Probacu i Naive Bias pa neka to bude to.
+
+Suport Vector Machines na 0.1 (udeo test uzoraka) 63.41%
+Linear Regression je sledeci najbolji sa 58.54%
