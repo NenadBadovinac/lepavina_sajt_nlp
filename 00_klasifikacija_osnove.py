@@ -58,9 +58,11 @@ from sklearn.linear_model import LogisticRegression as LR
 from sklearn.naive_bayes import MultinomialNB as MNB
 from sklearn.ensemble import RandomForestClassifier as RF
 
+
+# pored algoritama se nalaze odredjene uspesnosti
 algoritmi = [
-    RF(), # 50.81%  (test_size = 0.3) #52.13% (test_size 0.1)
-    MNB(), # 42.28% (0.3) #39.94% (0.1)
+    RF(), # 50.81%  (test_size = 0.3) 52.13% (test_size 0.1)
+    MNB(), # 42.28% (0.3) 39.94% (0.1)
     SVC(kernel='linear'), # 62.5% (0.3) 63.41% (0.1)
     DTC(), # 38.11% (0.3) 44% (0.1)
     LR() # 58.54% (0.3) 57% (0.1)
@@ -85,16 +87,15 @@ for algoritam in algoritmi[0:1]:
     uspeh = uspesnost(test_tema, predvidjeno)
     print ("\nUspesnost:", round(uspeh*100,2), "%")
     
-
     # Objasnjenje za implementirano odredjivanje uspesnosti
-    # Mozemo i to, ali mislim da je ovo gore citkije
+    # Mozemo i ovo dole, ali mislim da je ovo gore citkije
 '''        
     from sklearn.metrics import accuracy_score
     predictions = klasifikator.predict(test_vektori)
-    print(print(accuracy_score(test_tema, predictions)))
+    print(accuracy_score(test_tema, predictions))
 '''
 
 
 # Linear Support Vector Machine is widely regarded as one of the best text classification algorithms.
 # We achieve a higher accuracy score of 79% which is 5% improvement over Naive Bayes
-# Gorje tvrdnje se uklapaju sa nasim rezultatima
+# Gornje tvrdnje se uklapaju sa nasim rezultatima
