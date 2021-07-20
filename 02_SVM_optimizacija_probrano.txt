@@ -1,0 +1,17 @@
+Udeo tekstova za testiranje: 0.3
+--------------------------------
+Uspesnost za: ('linear', 1.5) 63.41 %
+Uspesnost za: ('linear', 1.8) 63.52 %
+Uspesnost za: ('linear', 2.0) 63.31 %
+Uspesnost za: ('sigmoid', 1.5) 63.62 %
+Uspesnost za: ('sigmoid', 1.8) 63.62 %
+Uspesnost za: ('sigmoid', 2.0) 63.52 %
+
+Udeo tekstova za testiranje: 0.1
+--------------------------------
+Uspesnost za: ('linear', 1.5) 64.02 %
+Uspesnost za: ('linear', 1.8) 64.02 %
+Uspesnost za: ('linear', 2.0) 64.02 %
+Uspesnost za: ('sigmoid', 1.5) 63.11 %
+Uspesnost za: ('sigmoid', 1.8) 63.11 %
+Uspesnost za: ('sigmoid', 2.0) 63.11 %
