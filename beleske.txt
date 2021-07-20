@@ -21,3 +21,4 @@ merimo odredjeni broj karakteristika (visinu, tezinu
 , pritisak) svakome. Ali, kod nas nema istog broja dimenzija.
 Mi imamo tekst i temu. Tekst moze biti proizvoljno dug. 
 
+

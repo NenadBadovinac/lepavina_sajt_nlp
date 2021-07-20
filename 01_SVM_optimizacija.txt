@@ -1,0 +1,53 @@
+Udeo tekstova za testiranje: 0.3
+--------------------------------
+Uspesnost za: ('linear', 0.5) 59.25 %
+Uspesnost za: ('linear', 0.8) 61.79 %
+Uspesnost za: ('linear', 1.0) 62.5 %
+Uspesnost za: ('linear', 1.2) 63.62 %
+Uspesnost za: ('linear', 1.5) 63.41 %
+Uspesnost za: ('rbf', 0.5) 48.27 %
+Uspesnost za: ('rbf', 0.8) 54.57 %
+Uspesnost za: ('rbf', 1.0) 58.23 %
+Uspesnost za: ('rbf', 1.2) 59.15 %
+Uspesnost za: ('rbf', 1.5) 59.65 %
+Uspesnost za: ('sigmoid', 0.5) 58.33 %
+Uspesnost za: ('sigmoid', 0.8) 61.28 %
+Uspesnost za: ('sigmoid', 1.0) 61.69 %
+Uspesnost za: ('sigmoid', 1.2) 63.01 %
+Uspesnost za: ('sigmoid', 1.5) 63.62 %
+
+Udeo tekstova za testiranje: 0.2
+--------------------------------
+Uspesnost za: ('linear', 0.5) 58.23 %
+Uspesnost za: ('linear', 0.8) 60.37 %
+Uspesnost za: ('linear', 1.0) 62.5 %
+Uspesnost za: ('linear', 1.2) 62.96 %
+Uspesnost za: ('linear', 1.5) 62.5 %
+Uspesnost za: ('rbf', 0.5) 48.02 %
+Uspesnost za: ('rbf', 0.8) 55.49 %
+Uspesnost za: ('rbf', 1.0) 58.08 %
+Uspesnost za: ('rbf', 1.2) 58.69 %
+Uspesnost za: ('rbf', 1.5) 58.99 %
+Uspesnost za: ('sigmoid', 0.5) 57.47 %
+Uspesnost za: ('sigmoid', 0.8) 59.76 %
+Uspesnost za: ('sigmoid', 1.0) 61.74 %
+Uspesnost za: ('sigmoid', 1.2) 62.8 %
+Uspesnost za: ('sigmoid', 1.5) 62.96 %
+
+Udeo tekstova za testiranje: 0.1
+--------------------------------
+Uspesnost za: ('linear', 0.5) 57.93 %
+Uspesnost za: ('linear', 0.8) 62.5 %
+Uspesnost za: ('linear', 1.0) 63.41 %
+Uspesnost za: ('linear', 1.2) 63.41 %
+Uspesnost za: ('linear', 1.5) 64.02 %
+Uspesnost za: ('rbf', 0.5) 47.87 %
+Uspesnost za: ('rbf', 0.8) 55.49 %
+Uspesnost za: ('rbf', 1.0) 57.32 %
+Uspesnost za: ('rbf', 1.2) 58.23 %
+Uspesnost za: ('rbf', 1.5) 60.06 %
+Uspesnost za: ('sigmoid', 0.5) 57.93 %
+Uspesnost za: ('sigmoid', 0.8) 60.98 %
+Uspesnost za: ('sigmoid', 1.0) 62.2 %
+Uspesnost za: ('sigmoid', 1.2) 62.8 %
+Uspesnost za: ('sigmoid', 1.5) 63.11 %
