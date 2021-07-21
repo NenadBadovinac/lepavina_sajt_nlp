@@ -86,6 +86,7 @@ if __name__ == '__main__':
     
     jezgra = ['linear','sigmoid']
     regulatori = [1.5, 1.8, 2.0]
+
     
     # 5 Uvodjenje razlicitih splitera
     
