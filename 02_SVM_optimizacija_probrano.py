@@ -1,7 +1,6 @@
 
 
 # 6 Splitovanje i TfIdf Vektorizacija
-
 def splitovanje(split, kombinacije):
     
     train, test = train_test_split(objave, test_size = split, random_state=1)
@@ -24,7 +23,6 @@ def splitovanje(split, kombinacije):
 
         
 # 7 Odredjivanje uspesnosti za razlicite kombinacije kernela i regulatora
-
 def optimizator(kombo, komplet):
 
     jezgro = kombo[0]
@@ -50,7 +48,6 @@ def optimizator(kombo, komplet):
 
     
 # 0 Start programa
-
 if __name__ == '__main__':
 
     
@@ -81,15 +78,13 @@ if __name__ == '__main__':
 
 
     # 4 Kreiranje kombinacija (oblik funkcije, penal)
-
     from itertools import product
     
     jezgra = ['linear','sigmoid']
     regulatori = [1.5, 1.8, 2.0]
 
     
-    # 5 Uvodjenje razlicitih splitera
-    
+    # 5 Uvodjenje razlicitih splitera    
     from sklearn.model_selection import train_test_split
     from sklearn.feature_extraction.text import TfidfVectorizer
     from sklearn.svm import SVC
