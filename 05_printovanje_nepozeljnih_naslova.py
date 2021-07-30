@@ -1,4 +1,4 @@
-# pregled naslova nepozeljnih tekstova
+# Pregled naslova nepozeljnih tekstova
 
 import json
    
@@ -9,4 +9,5 @@ naslovi = []
 for naslov, sadrzaj in recnik.items():
     naslovi.append(naslov)
 
-print(naslovi)
+for naslov in naslovi:
+    print('-', naslov)

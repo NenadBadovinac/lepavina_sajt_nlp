@@ -1,4 +1,4 @@
-
+import pickle
 
 # 5 Splitovanje i TfIdf Vektorizacija
 
@@ -15,20 +15,22 @@ def splitovanje(spliter, objave):
     train_vektori = V.fit_transform(train_sadrzaj)
     test_vektori = V.transform(test_sadrzaj)
 
-    with open('database\vektorizator.pkl','wb') as f:
+    with open('database\\vektorizator.pkl','wb') as f:
         pickle.dump(V, f)
 
-    komplet = [train_vektori, train_tema, test_vektori, test_tema]
+    komplet = [train_vektori, train_pozeljnost, test_vektori, test_pozeljnost]
    
-    kombo, uspeh = optimizator(komplet)
-    print ("Uspesnost za:", kombo, round(uspeh*100,2), "%")
+    uspeh = optimizator(komplet)
+    print ("Uspesnost:", round(uspeh*100, 2), "%")
 
        
 # 6 Smimanje klasifikatora 
 
 def optimizator(komplet):
 
+    #jezgro = 'sigmoid'
     jezgro = 'linear'
+    # regulatore mozes menjati od 1.0 - 1.5 (1.0 je default)
     regulator = 1.5
 
     train_vektori = komplet[0]
@@ -39,7 +41,7 @@ def optimizator(komplet):
     klasifikator = SVC(kernel = jezgro, C = regulator)
     klasifikator.fit(train_vektori, train_pozeljnost)
 
-    with open('data\klasifikator.pkl','wb') as f:
+    with open('database\\klasifikator.pkl','wb') as f:
         pickle.dump(klasifikator, f)
         
     predvidjeno = klasifikator.predict(test_vektori)
@@ -49,8 +51,11 @@ def optimizator(komplet):
         return uspesnost
 
     uspeh = uspesnost(test_pozeljnost, predvidjeno)
+
+    for i in range(len(test_pozeljnost)):
+        print(test_pozeljnost[i], predvidjeno[i])
     
-    return kombo, uspeh
+    return uspeh
     
 
     
@@ -83,12 +88,12 @@ if __name__ == '__main__':
     # 3 Kreiranje liste objekata klase Objava. Sadrzaj (skup reci -> tekst)
     objave = []
 
-    for redbr, post_lista in pozeljni.items():
+    for redbr, post_lista in list(pozeljni.items())[:len(nepozeljni)]:
         sadrzaj = " ".join(post_lista[1])
         post = Objava(post_lista[0], sadrzaj, 'pozeljan')    
         objave.append(post)
 
-    for naslov, sadrzaj in recnik.items():
+    for naslov, sadrzaj in nepozeljni.items():
         sadrzaj = " ".join(sadrzaj)
         post = Objava(naslov, sadrzaj, 'nepozeljan')    
         objave.append(post) 
@@ -101,7 +106,7 @@ if __name__ == '__main__':
     import numpy as np
 
     #parametar vremenom podesiti na 0.1 (sa vecim udelom nepozeljnih tekstova..)
-    spliter = 0.3
+    spliter = 0.2
 
     splitovanje(spliter, objave)
         
