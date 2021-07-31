@@ -9,5 +9,8 @@ naslovi = []
 for naslov, sadrzaj in recnik.items():
     naslovi.append(naslov)
 
+print('Broj nepozeljnih tekstova:', len(naslovi))
+
 for naslov in naslovi:
     print('-', naslov)
+

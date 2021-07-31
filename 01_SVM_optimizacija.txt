@@ -51,3 +51,4 @@ Uspesnost za: ('sigmoid', 0.8) 60.98 %
 Uspesnost za: ('sigmoid', 1.0) 62.2 %
 Uspesnost za: ('sigmoid', 1.2) 62.8 %
 Uspesnost za: ('sigmoid', 1.5) 63.11 %
+
