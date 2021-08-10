@@ -51,7 +51,7 @@ def filtriranje(sadrzaj):
     vektor = V.transform(sadrzaj)
     predvidjena_pozeljnost = klasifikator.predict(vektor)
 
-    return predvidjena_pozeljnost[0].capitalize()
+    return predvidjena_pozeljnost[0].capitalize(), predvidjena_pozeljnost
 
 
 
