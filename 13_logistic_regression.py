@@ -23,7 +23,7 @@
 #teta_nula = teta_nula - alfa x 1/m x sum(hi(x) - yi)
 #ako je suma pozitivna h(x) je vece od y i treba smanjiti teta (i obrnuto) - desna strana zvona
 #ako je dJ/dteta veliko i promena je velika (srazmerna izvodu)
-# sto smo blize minimumu, promena se sporije odvija
+#sto smo blize minimumu, promena se sporije odvija
 
 import numpy as np
 
